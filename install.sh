@@ -38,7 +38,6 @@ echo "(Proses ini disembunyikan output-nya agar rapi. Mohon tunggu 1-2 menit)"
 ) > /dev/null 2>&1
 
 echo -e "\n[2/6] Memperbarui sistem dan menginstal paket GUI & VNC..."
-apt-get update
 DEBIAN_FRONTEND=noninteractive apt-get install -y xfce4 xfce4-goodies firefox tigervnc-standalone-server novnc websockify
 
 echo -e "\n[3/6] Mengonfigurasi Password VNC..."
