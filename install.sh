@@ -10,11 +10,7 @@ echo "=============================================="
 echo "  AUTO UNINSTALL K8S & SETUP XFCE + WEB VNC   "
 echo "=============================================="
 
-# Meminta password di awal sebelum proses tertahan
-read -s -p "Buat password untuk akses VNC/Web (Maks 8 Karakter): " VNC_PASS
-echo
-read -s -p "Ketik ulang password: " VNC_PASS_VERIFY
-echo
+VNC_PASS="password123"
 
 if [ "$VNC_PASS" != "$VNC_PASS_VERIFY" ]; then
     echo "Error: Password tidak cocok! Script dibatalkan."
@@ -71,5 +67,5 @@ echo "=============================================="
 echo "Silakan buka browser Anda dan akses link berikut:"
 echo "http://$SERVER_IP:6080/vnc.html"
 echo ""
-echo "Gunakan password yang baru saja Anda buat untuk login."
+echo 'Gunakan password: "password123"'
 echo "NOTE: GUNAKAN PORT FORWARDING KILLERCODA DENGAN PORT 6080"
