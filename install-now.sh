@@ -12,11 +12,6 @@ echo "=============================================="
 
 VNC_PASS="password123"
 
-if [ "$VNC_PASS" != "$VNC_PASS_VERIFY" ]; then
-    echo "Error: Password tidak cocok! Script dibatalkan."
-    exit 1
-fi
-
 echo -e "\n[1/6] Menghapus Kubernetes hingga bersih ke akarnya..."
 echo "(Proses ini disembunyikan output-nya agar rapi. Mohon tunggu 1-2 menit)"
 # Proses dibungkus dan di-redirect ke /dev/null agar berjalan senyap
