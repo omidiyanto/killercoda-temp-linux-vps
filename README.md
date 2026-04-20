@@ -1,2 +1,1 @@
-# killercoda-temp-linux-vps
-1 Hour Limited Ubuntu Linux VPS (1 Core 4GB RAM) from Killercoda
+curl -s https://raw.githubusercontent.com/omidiyanto/killercoda-temp-linux-vps/refs/heads/main/install.sh | bash
